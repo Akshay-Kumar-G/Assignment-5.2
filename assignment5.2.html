@@ -1,0 +1,46 @@
+<!DOCUMENTTYPE HTML>
+	<html>
+<head>
+<title>Assignment5.2</title>
+</head>
+
+<h1> This is Assignment 5.2</h1>
+<h2> <b>Assignment:</b> Create a JavaScript function to check if a given string is a vowel or consonant.<br>
+<body><!-- function to find the number of vowels and consonants in the string-->
+	<script language="JavaScript">
+	function vowel()
+{
+var a = new Array(20);
+a=prompt('Enter a string ',"");
+document.write("The String Is = " +a);
+var length = a.length;
+document.write("<br>The string Lenght is: " + length);
+document.write("<br>The Vowels in this String Are = ");
+var v=0;
+var c=0;
+var i=0;
+/* Checking for Vowel in the string */
+for(i=0;i<length;i++) 
+{
+if((a[i]=='a')||(a[i]=='e')||(a[i]=='i')||(a[i]=='o')||(a[i]=='u')||(a[i]=='A')||(a[i]=='E')||(a[i]=='I')||(a[i]=='O')||(a[i]=='U'))
+{
+++v;
+document.write(a[i]+", ");
+}
+else
+{
+  ++c;
+}
+}
+document.write("<br>The number of vowels in this string Is = " +v);
+document.write("<br>The number of consonants in this string Is = " +c);
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<h2>Javascript program to to count the number of vowels in a string. <u>Click Below</u></h2><!-- user imterface to enter string of their interest -->
+<form>
+<input type="button" name="Button1" value="Count the number of vowels in a string" onclick="vowel()">
+</form>
+</body>
+</html>
